@@ -25,14 +25,25 @@ namespace _2._1.AdivinaNumero
 
         private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
-            if(int.Parse(numeroTextBox.Text) < Numero) pistaTextBlock.Text = "Te has quedado corto.";
-            
-            else if(int.Parse(numeroTextBox.Text) == Numero)
+            try
             {
-                pistaTextBlock.Text = "¡HAS ACERTADO!";
+    
+                if (int.Parse(numeroTextBox.Text) < Numero) pistaTextBlock.Text = "Te has quedado corto.";
+
+                else if (int.Parse(numeroTextBox.Text) == Numero)
+                {
+                    pistaTextBlock.Text = "¡HAS ACERTADO!";
+                }
+                else pistaTextBlock.Text = "Te has pasado.";
+            } catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
-            else pistaTextBlock.Text = "Te has pasado.";
-        }
+               
+            }
+            
+            
+        
 
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
