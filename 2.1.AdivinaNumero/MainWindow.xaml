@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._1.AdivinaNumero"
         mc:Ignorable="d"
-        Title="Adivina el número" Height="160" Width="485">
+        Title="Adivina el número" Height="160" Width="485" Icon="assets/256.ico">
     <Grid>
         <TextBox x:Name="numeroTextBox"  HorizontalAlignment="Left" Height="20" Margin="176,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="10"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,32,0,0" FontSize="11" Text="¿Qué número he pensado?"/>
