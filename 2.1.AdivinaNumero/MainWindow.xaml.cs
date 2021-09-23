@@ -24,5 +24,12 @@ namespace _2._1.AdivinaNumero
         {
             InitializeComponent();
         }
+
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

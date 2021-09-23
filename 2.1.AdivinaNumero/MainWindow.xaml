@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._1.AdivinaNumero"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="160" Width="485">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="176,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,32,0,0" FontSize="11" Text="¿Qué número he pensado?"/>
+        <Button x:Name="botonComprobar"  Content="Comprobar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="83,69,0,0" FontSize="12" Click="Button_Click" Height="20"/>
+        <Button Content="Reiniciar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="194,69,0,0" RenderTransformOrigin="0.034,-0.233" FontSize="12" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="326,34,0,0"/>
+
     </Grid>
 </Window>
