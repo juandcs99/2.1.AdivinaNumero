@@ -23,7 +23,7 @@ namespace _2._1.AdivinaNumero
 
         }
 
-        private void ComprobarButton_Click(object sender, RoutedEventArgs e, int numero)
+        private void ComprobarButton_Click(object sender, RoutedEventArgs e)
         {
             if(int.Parse(numeroTextBox.Text) < Numero) pistaTextBlock.Text = "Te has quedado corto.";
             
