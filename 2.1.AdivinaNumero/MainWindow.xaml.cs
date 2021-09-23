@@ -27,7 +27,6 @@ namespace _2._1.AdivinaNumero
         {
             try
             {
-    
                 if (int.Parse(numeroTextBox.Text) < Numero) pistaTextBlock.Text = "Te has quedado corto.";
 
                 else if (int.Parse(numeroTextBox.Text) == Numero)
@@ -35,9 +34,9 @@ namespace _2._1.AdivinaNumero
                     pistaTextBlock.Text = "¡HAS ACERTADO!";
                 }
                 else pistaTextBlock.Text = "Te has pasado.";
-            } catch(Exception ex)
+            } catch(FormatException)
             {
-                Console.WriteLine(ex.Message);
+                pistaTextBlock.Text = "Introduce un valor númerico";
             }
                
             }
@@ -48,6 +47,7 @@ namespace _2._1.AdivinaNumero
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             Numero = GenerarAleatorio();
+            numeroTextBox.Text = "";
             pistaTextBlock.Text = "";
         }
     }
