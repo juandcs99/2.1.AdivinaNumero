@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Adivina el número" Height="160" Width="485" Icon="assets/256.ico">
     <Grid>
-        <TextBox x:Name="numeroTextBox"  HorizontalAlignment="Left" Height="20" Margin="176,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="10"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,32,0,0" FontSize="11" Text="¿Qué número he pensado?"/>
-        <Button x:Name="comprobarButton"  Content="Comprobar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="83,69,0,0" FontSize="12" Click="ComprobarButton_Click" Height="20"/>
-        <Button x:Name="reiniciarButton"  Content="Reiniciar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="194,69,0,0" RenderTransformOrigin="0.034,-0.233" FontSize="12" Height="20" Click="ReiniciarButton_Click"/>
+        <TextBox x:Name="numeroTextBox"  HorizontalAlignment="Left" Height="20" Margin="176,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="10"/>
+        <Button x:Name="comprobarButton" IsDefault="True" Content="Comprobar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="83,69,0,0" FontSize="12" Click="ComprobarButton_Click" Height="20"/>
+        <Button x:Name="reiniciarButton" IsCancel="True" Content="Reiniciar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="194,69,0,0" RenderTransformOrigin="0.034,-0.233" FontSize="12" Height="20" Click="ReiniciarButton_Click"/>
         <TextBlock x:Name="pistaTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="333,34,0,0"/>
 
     </Grid>

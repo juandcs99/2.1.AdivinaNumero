@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Media;
 
 namespace _2._1.AdivinaNumero
 {
@@ -40,15 +39,14 @@ namespace _2._1.AdivinaNumero
             }
                
             }
-            
-            
-        
 
         private void ReiniciarButton_Click(object sender, RoutedEventArgs e)
         {
             Numero = GenerarAleatorio();
             numeroTextBox.Text = "";
+            // numeroTextBox.Clear();
             pistaTextBlock.Text = "";
+            // pistaTextBlock.Clear();
         }
     }
 }
